@@ -2,8 +2,9 @@ package com.ct.test;
 
 /**
  * 
- * @author lwh 제목 : 옹알이 (1) 링크 :
- *         https://school.programmers.co.kr/learn/courses/30/lessons/120956
+ * @author lwh
+ * @제목 : 옹알이
+ * @링크 : https://school.programmers.co.kr/learn/courses/30/lessons/120956
  */
 
 public class Mumbling_1 {
