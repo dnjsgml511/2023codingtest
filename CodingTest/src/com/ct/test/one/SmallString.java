@@ -32,7 +32,7 @@ public class SmallString {
 			BigInteger first = BigInteger.valueOf(Long.parseLong(p));
 			BigInteger second = BigInteger.valueOf(Long.parseLong(cut));
 
-			if (first.subtract(second).intValue() >= 0)
+			if (first.subtract(second).longValue() >= 0)
 				answer++;
 		}
 
