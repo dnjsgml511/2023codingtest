@@ -50,9 +50,6 @@ public class DestructionOfPersonalInfo {
 				answer.add(i + 1);
 			}
 		}
-
 		return answer;
-
 	}
-
 }

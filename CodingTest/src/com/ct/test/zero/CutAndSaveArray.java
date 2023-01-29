@@ -20,6 +20,7 @@ public class CutAndSaveArray {
 		List<String> sol = sol(my_str, n);
 
 		System.out.println(" -- Sol --");
+		System.out.println(sol);
 	}
 
 	public static List<String> sol(String my_str, int n) {
