@@ -1,12 +1,10 @@
 package com.ct.test.zero;
 
-import java.util.Arrays;
-
 /**
  * 
  * @author lwh
- * @제목 : n의 배수 고르기
- * @링크 : https://school.programmers.co.kr/learn/courses/30/lessons/120907
+ * @제목 : 문자열 계산하기
+ * @링크 : https://school.programmers.co.kr/learn/courses/30/lessons/120902
  */
 
 public class CalcString {
