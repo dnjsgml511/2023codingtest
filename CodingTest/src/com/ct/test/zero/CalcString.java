@@ -22,24 +22,17 @@ public class CalcString {
 	}
 
 	public static int sol(String my_string) {
-		System.out.println(my_string);
 		int answer = 0;
 
 		String[] split = my_string.split(" ");
+		answer = Integer.valueOf(split[0]);
 
-		for (int i = 0; i < split.length - 1; i = i + 2) {
-			if (split[i + 1].equals("+")) {
-				answer += Integer.valueOf(split[i]);
-			} else {
-				answer -= Integer.valueOf(split[i]);
+		for (int i = 1; i < split.length; i = i + 2) {
+			if (split[i].equals("+")) {
+				answer += Integer.valueOf(split[i+1]);
+			}else {
+				answer -= Integer.valueOf(split[i+1]);
 			}
-		}
-
-		System.out.println(split[split.length - 1]);
-		if (split[split.length - 2].equals("+")) {
-			answer += Integer.valueOf(split[split.length - 1]);
-		} else {
-			answer -= Integer.valueOf(split[split.length - 1]);
 		}
 
 		return answer;
