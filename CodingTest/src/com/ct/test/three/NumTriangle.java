@@ -30,21 +30,21 @@ public class NumTriangle {
 		tmp[0][0] = triangle[0][0];
 
 		for (int i = 1; i < triangle.length; i++) {
-			tmp[i][0] = tmp[i - 1][0] + triangle[i][0];
-			tmp[i][i] = tmp[i - 1][i - 1] + triangle[i][i];
-
-			for (int j = 1; j <= i - 1; j++) {
-				tmp[i][j] = Math.max(tmp[i - 1][j - 1], tmp[i - 1][j]) + triangle[i][j];
-				answer = Math.max(answer, tmp[i][j]);
+			tmp[i][0] = triangle[i][0] + tmp[i - 1][0];
+			for (int j = 1; j < triangle[i].length; j++) {
+				tmp[i][j] = triangle[i][j] + Math.max(tmp[i - 1][j - 1], tmp[i - 1][j]);
+				answer = Math.max(tmp[i][j], answer);
 			}
-
-			for (int j = 0; j < tmp.length; j++) {
-				System.out.println(Arrays.toString(tmp[j]));
-			}
-			System.out.println();
 		}
 
 		return answer;
+	}
+
+	public static void print(int[][] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(Arrays.toString(arr[i]));
+		}
+		System.out.println();
 	}
 
 }
