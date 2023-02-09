@@ -44,6 +44,9 @@ public class CrossLine {
 
 		System.out.println(overSet);
 		System.out.println(min + " / " + max);
+		System.out.println();
+		System.out.println();
+		System.out.println();
 
 		int index = 0;
 		for (int i = min; i <= max; i++) {
